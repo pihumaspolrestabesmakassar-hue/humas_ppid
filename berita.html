@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daftar Berita - PPID</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="mini-header">
+    <div class="container">
+      <a class="back" href="index.html">⬅ Kembali</a>
+      <h1>Berita</h1>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="search-bar">
+      <input id="search" placeholder="Cari berita... (judul, konten, kategori)">
+      <select id="filter-cat">
+        <option value="all">Semua Kategori</option>
+        <option value="Pengumuman">Pengumuman</option>
+        <option value="Layanan Publik">Layanan Publik</option>
+        <option value="Hukum & Regulasi">Hukum & Regulasi</option>
+        <option value="Kegiatan Polri">Kegiatan Polri</option>
+      </select>
+    </section>
+
+    <section id="news-list"></section>
+  </main>
+
+  <footer class="site-footer small">
+    <div class="container">&copy; PPID Polrestabes Makassar — <span id="year2"></span></div>
+  </footer>
+
+  <script src="assets/js/news.js"></script>
+  <script>document.getElementById('year2').innerText = new Date().getFullYear();</script>
+</body>
+</html>

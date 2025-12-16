@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard Admin - PPID</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="mini-header">
+    <div class="container">
+      <a class="back" href="index.html">⬅ Front</a>
+      <h1>Dashboard Admin</h1>
+    </div>
+  </header>
+
+  <main class="container dashboard">
+    <section class="admin-actions">
+      <button id="btn-new" class="btn">Tambah Berita Baru</button>
+      <input id="admin-search" placeholder="Cari di dashboard...">
+    </section>
+
+    <section id="admin-list"></section>
+
+    <!-- Modal sederhana untuk edit/tambah -->
+    <div id="modal" class="modal" aria-hidden="true">
+      <div class="modal-content">
+        <button class="close" id="modal-close">✖</button>
+        <h3 id="modal-title">Tambah/Edit Berita</h3>
+        <label>Judul</label>
+        <input id="m-title" type="text">
+        <label>Konten</label>
+        <textarea id="m-content" rows="6"></textarea>
+        <label>Kategori</label>
+        <select id="m-category">
+          <option>Pengumuman</option>
+          <option>Layanan Publik</option>
+          <option>Hukum & Regulasi</option>
+          <option>Kegiatan Polri</option>
+        </select>
+        <label>Gambar (opsional)</label>
+        <input id="m-image" type="file" accept="image/*">
+        <div id="m-preview"></div>
+        <div class="modal-actions">
+          <button id="save-news" class="btn primary">Simpan</button>
+          <button id="delete-news" class="btn danger" style="display:none">Hapus</button>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="assets/js/dashboard.js"></script>
+</body>
+</html>
