@@ -1,112 +1,82 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PPID Polrestabes Makassar - Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PPID Polrestabes Makassar</title>
+
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="topbar">
-      <div class="brand">
-        <img src="assets/img/logo.png" alt="Logo" class="logo" onerror="this.style.display='none'">
-        <div>
-          <h1>PPID Polrestabes Makassar</h1>
-          <p class="tag">Informasi, Berita & Layanan Kepolisian</p>
-        </div>
-      </div>
-      <nav class="navbar">
-        <a href="index.html">Home</a>
-        <a href="berita.html">Berita</a>
-        <a href="about.html">Informasi Publik</a>
-        <a href="layanan-informasi.html">Layanan</a>
-        <a href="dashboard.html">Dashboard</a>
-        <a href="contact.html">Kontak</a>
-      </nav>
-    </div>
 
-    <div class="hero">
-      <div class="hero-inner">
-        <h2>Selamat Datang di PPID Polrestabes Makassar</h2>
-        <p>Dapatkan informasi resmi, berita terkini, dan akses layanan masyarakat dengan mudah.</p>
-        <div class="hero-actions">
-          <a class="btn" href="berita.html">Lihat Berita</a>
-          <a class="btn outline" href="layanan-informasi.html">Layanan Publik</a>
-        </div>
-      </div>
-      <img src="assets/img/hero.jpg" alt="Polrestabes Makassar" class="hero-img" onerror="this.style.display='none'">
-    </div>
-  </header>
-
-  <main class="container">
-    <section class="cards">
-      <article class="card">
-        <h3>Berita Terkini</h3>
-        <p>Akses berita terbaru dari Polrestabes Makassar.</p>
-        <a href="berita.html" class="link">Buka Berita →</a>
-      </article>
-
-      <article class="card">
-        <h3>Layanan Publik</h3>
-        <p>Informasi layanan, prosedur, dan tata cara permintaan informasi.</p>
-        <a href="layanan-informasi.html" class="link">Lihat Layanan →</a>
-      </article>
-
-      <article class="card">
-        <h3>Agenda & Kegiatan</h3>
-        <p>Agenda penting dan kegiatan Polrestabes.</p>
-        <a href="agenda.html" class="link">Lihat Agenda →</a>
-      </article>
-    </section>
-
-    <section class="upload-section">
-      <h2>Upload Berita (Simulasi)</h2>
-      <form id="news-form" class="form-vertical">
-        <label>Judul</label>
-        <input id="title" type="text" required>
-
-        <label>Konten</label>
-        <textarea id="content" rows="5" required></textarea>
-
-        <label>Kategori</label>
-        <select id="category">
-          <option value="Pengumuman">Pengumuman</option>
-          <option value="Layanan Publik">Layanan Publik</option>
-          <option value="Hukum & Regulasi">Hukum & Regulasi</option>
-          <option value="Kegiatan Polri">Kegiatan Polri</option>
-        </select>
-
-        <label>Gambar (opsional)</label>
-        <input id="image" type="file" accept="image/*">
-
-        <div id="image-preview"></div>
-
-        <button type="submit" class="btn primary">Upload Berita</button>
-      </form>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
+<header class="site-header">
+  <div class="topbar">
+    <div class="brand">
+      <img src="./assets/img/logo.png" class="logo" alt="Logo">
       <div>
-        <h4>PPID Polrestabes Makassar</h4>
-        <p>Jl. Contoh Alamat No. 1, Makassar — Telp: (0411) 123-456</p>
-      </div>
-      <div>
-        <h4>Link Cepat</h4>
-        <ul>
-          <li><a href="berita.html">Berita</a></li>
-          <li><a href="layanan-informasi.html">Layanan</a></li>
-          <li><a href="contact.html">Kontak</a></li>
-        </ul>
+        <h1>PPID Polrestabes Makassar</h1>
+        <p class="tag">Informasi, Berita & Layanan Kepolisian</p>
       </div>
     </div>
-    <div class="copyright">&copy; PPID Polrestabes Makassar — <span id="year"></span></div>
-  </footer>
 
-  <script src="assets/js/news.js"></script>
-  <script>document.getElementById('year').innerText = new Date().getFullYear();</script>
+    <nav class="navbar">
+      <a href="./index.html">Home</a>
+      <a href="./berita.html">Berita</a>
+      <a href="./layanan-informasi.html">Layanan</a>
+      <a href="./dashboard.html">Dashboard</a>
+      <a href="./contact.html">Kontak</a>
+    </nav>
+  </div>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <h2>Selamat Datang di PPID Polrestabes Makassar</h2>
+      <p>Dapatkan informasi resmi, berita terkini, dan layanan publik dengan mudah.</p>
+      <div class="hero-actions">
+        <a href="berita.html" class="btn">Lihat Berita</a>
+        <a href="layanan-informasi.html" class="btn outline">Layanan Publik</a>
+      </div>
+    </div>
+    <img src="./assets/img/hero.jpg" class="hero-img" alt="Hero">
+  </section>
+</header>
+
+<main class="container">
+  <section class="cards">
+    <article class="card">
+      <h3>Berita Terkini</h3>
+      <p>Informasi terbaru dari Polrestabes Makassar.</p>
+      <a href="berita.html" class="link">Buka Berita →</a>
+    </article>
+
+    <article class="card">
+      <h3>Layanan Publik</h3>
+      <p>Prosedur dan tata cara permohonan informasi.</p>
+      <a href="layanan-informasi.html" class="link">Lihat Layanan →</a>
+    </article>
+
+    <article class="card">
+      <h3>Agenda & Kegiatan</h3>
+      <p>Kegiatan resmi dan agenda kepolisian.</p>
+      <a href="agenda.html" class="link">Lihat Agenda →</a>
+    </article>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> PPID Polrestabes Makassar</p>
+  </div>
+</footer>
+
+<script src="./assets/js/news.js"></script>
+<script>
+  document.getElementById('year').innerText = new Date().getFullYear();
+</script>
+
 </body>
 </html>
